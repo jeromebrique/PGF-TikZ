@@ -1,0 +1,16 @@
+PGF: Portable Graphics Format <- lowlevel library
+TikZ: TikZ ist kein Zeichenprogramm <- highlevel library
+
+Vorteile von TikZ-Nutzung
+- Alles in einer Datei
+- Korrekte Zeichensätze, für Typographie/Textsatz-Fetischisten
+- sehr enge Integration von Text und Grafik
+- erzeugt svg-Dateien -> kein Problem mit Skalierung
+- enorm präzise Positionierung von Elementen möglich
+
+Voraussetzungen:
+ - evtl. LaTeX, Installation + Compilierung der Rest ist ein eigener Dialekt
+ - Steuerungselemente fangen mit \ an
+ - Gruppierung mit {}
+ 
+
