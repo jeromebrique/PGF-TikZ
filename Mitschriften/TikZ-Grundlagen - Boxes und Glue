@@ -2,11 +2,32 @@
 
 \usepackage[ansinew]{inputenc}
 \usepackage[a6paper, left=2cm, right=2cm, landscape]{geometry}
-
-\usepackage{tikz}
+\usepackage{tikz} % sollte tikz eigenständig laden
 
 \pagestyle{empty}
 
 \begin{document}
 Text.
+
+\begin{tikzpicture} %environment
+ \fill[red] circle (1mm); % Semikolon ist wichtig.
+\end{tikzpicture}
+
 \end{document}
+
+TeX arbeit mit boxes und Glue. Kleinste Bausteine sind einzelne Buchstaben, aus sicht von TeX eine Box.
+Die hat eine Bestimmte Ausdehnung (Höhe, Breite, Baseline). Boxes werden zusammengeklebt mit Glue.
+Es gibt unterschiedliche Sorten Glue.
+
+Boxen in TeX werden durch frameboxes sichtbar:  
+  \setlength{fboxsep}{0cm} %erstellt echte Box.
+  T\fbox{e}xt.
+
+Kurzform von,
+
+\begin{tikzpicture} 
+\end{tikzpicture}
+
+ist:
+
+\tikz ... ; %nach dem Semikolon gehts weiter im Text.
