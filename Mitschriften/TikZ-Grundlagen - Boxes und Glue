@@ -1,0 +1,10 @@
+\documentclass{article}
+
+\usepackage[ansinew]{inputenc}
+\usepackage[a6paper, left=2cm, right=2cm, landscape]{geometry}
+
+\pagestyle{empty}
+
+\begin{document}
+Text.
+\end{document}
